@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/smiles">
+        <file>icons/Smiles/0_1a811c_8e157dea_orig.png</file>
+        <file>icons/Smiles/0_13d410_2ac6be19_XL.png</file>
+        <file>icons/Smiles/big emoticons 11.png</file>
+        <file>icons/Smiles/girl-1.png</file>
+        <file>icons/Smiles/Nervous-Smiley.png</file>
+        <file>icons/Smiles/Original_smiley_face.png</file>
+        <file>icons/Smiles/persons-0027_medium.png</file>
+        <file>icons/Smiles/persons-0056.png</file>
+        <file>icons/Smiles/smile08.png</file>
+        <file>icons/Smiles/smile14.png</file>
+        <file>icons/Smiles/smile17.png</file>
+        <file>icons/Smiles/smiley-100.png</file>
+        <file>icons/Smiles/smiley-150601_960_720.png</file>
+        <file>icons/Smiles/smileys_001_01.png</file>
+        <file>icons/Smiles/x-mas-smiley.png</file>
+    </qresource>
+</RCC>

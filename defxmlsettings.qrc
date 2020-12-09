@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/def">
+        <file>defSettings.xml</file>
+        <file>defLogs.xml</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>ttt.qml</file>
+    </qresource>
+</RCC>

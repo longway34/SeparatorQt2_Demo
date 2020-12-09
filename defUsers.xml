@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<USERS UCOUNT="1" SCOUNT="4">
+    <USER ID="0" NIK="anonymouse" FAMILY="Никому" PATRONYMIC="Неизвесный" NAME="Воин" AVATAR=":/smiles/icons/Smiles/smileys_001_01.png"/>
+    <SHIFT ID="0" NAME="Сутки" FINISH="00:00" START="00:00"/>
+    <SHIFT ID="1" NAME="Первая" FINISH="08:00" START="00:00"/>
+    <SHIFT ID="2" NAME="Вторая" FINISH="16:00" START="08:00"/>
+    <SHIFT ID="3" NAME="Третья" FINISH="00:00" START="16:00"/>
+</USERS>

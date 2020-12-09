@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>706</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>(c) ООО &quot;ТЕХНОРОС&quot; 2018 Программа работы сепаратора</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/icons/logo.jpg</normaloff>:/icons/icons/logo.jpg</iconset>
+  </property>
+  <property name="statusTip">
+   <string>(C) ООО &quot;ТЕХНОРОС&quot; 2018</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QSplitter::handle:horizontal {
+   width: 6px;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(242, 242, 242), stop:1 rgb(149, 150, 149))
+}
+
+QSplitter::handle:vertical {
+    height: 6px;
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(149, 150, 149), stop:1 rgb(242, 242, 242))
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="mainSplitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QTabWidget" name="tabsAllWidgets">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Triangular</enum>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideNone</enum>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>true</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>true</bool>
+       </property>
+       <property name="movable">
+        <bool>false</bool>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tabsAllWidgetsPage1">
+        <attribute name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/icons/b_Complex.png</normaloff>:/icons/icons/b_Complex.png</iconset>
+        </attribute>
+        <attribute name="title">
+         <string/>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QMdiArea" name="mdiArea">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="tabsClosable">
+            <bool>false</bool>
+           </property>
+           <property name="tabsMovable">
+            <bool>false</bool>
+           </property>
+           <property name="tabShape">
+            <enum>QTabWidget::Rounded</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabsAddSeparator">
+        <attribute name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/icons/b_Plus.png</normaloff>:/icons/icons/b_Plus.png</iconset>
+        </attribute>
+        <attribute name="title">
+         <string/>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QSplitter" name="splitter">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <widget class="SPRSettingsMainWidget" name="wAddSettings" native="true"/>
+              <widget class="QWidget" name="wControl" native="true">
+               <layout class="QGridLayout" name="gridLayout">
+                <item row="1" column="1">
+                 <widget class="QWidget" name="widget_2" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>200</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QPushButton" name="bAdd">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Нажмите для добавления сепаратора с настройками, указанными выше&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Добавить</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="icons.qrc">
+                    <normaloff>:/icons/icons/b_Plus.png</normaloff>:/icons/icons/b_Plus.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>32</width>
+                    <height>32</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="cbSelectSeparator">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Выберите один из сепереторов из комплекса для дублирования&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="editable">
+                   <bool>false</bool>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Выберите сепаратор...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icons.qrc">
+                     <normaloff>:/icons/icons/b_Ok_1.png</normaloff>:/icons/icons/b_Ok_1.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Сепаратор 0</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icons.qrc">
+                     <normaloff>:/icons/icons/Separate_tab_no_colors_icon.png</normaloff>:/icons/icons/Separate_tab_no_colors_icon.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>СФР 1</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icons.qrc">
+                     <normaloff>:/icons/icons/Separate_tab_no_colors_icon.png</normaloff>:/icons/icons/Separate_tab_no_colors_icon.png</iconset>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QPushButton" name="bFileName">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="icons.qrc">
+                    <normaloff>:/icons/icons/b_Open.png</normaloff>:/icons/icons/b_Open.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="2">
+                 <widget class="QLineEdit" name="leFileName">
+                  <property name="text">
+                   <string>Выберите файл конфигурации...</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QSplitter" name="downSplitter">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="childrenCollapsible">
+           <bool>false</bool>
+          </property>
+          <widget class="SPRComplexInfoWidget" name="wComplexSummaryGistogramm" native="true"/>
+          <widget class="TCPEchoLogsWidget" name="wLog" native="true"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icons/icons/Logo_3.png</normaloff>:/icons/icons/Logo_3.png</iconset>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>true</bool>
+    </property>
+    <addaction name="actMasterMode"/>
+    <addaction name="actSave"/>
+    <addaction name="actSaveAs"/>
+    <addaction name="actRefresh_2"/>
+    <addaction name="actAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actExit"/>
+   </widget>
+   <widget class="QMenu" name="menuUsers">
+    <property name="title">
+     <string>Операторы</string>
+    </property>
+    <addaction name="actUsersTable"/>
+    <addaction name="separator"/>
+    <addaction name="actionAnonymouse"/>
+    <addaction name="action"/>
+    <addaction name="action_5"/>
+    <addaction name="actionrrr"/>
+   </widget>
+   <widget class="QMenu" name="menuSmenas">
+    <property name="title">
+     <string>Смены</string>
+    </property>
+    <addaction name="actSmenasTable"/>
+    <addaction name="separator"/>
+    <addaction name="action08_00_16_00"/>
+    <addaction name="action16_00_00_00"/>
+    <addaction name="action00_00"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuUsers"/>
+   <addaction name="menuSmenas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+  </widget>
+  <action name="actSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_Save.png</normaloff>:/icons/icons/b_Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить изменения</string>
+   </property>
+   <property name="iconText">
+    <string>Сохранить изменения в текущем файле</string>
+   </property>
+  </action>
+  <action name="actExit">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_Exit.png</normaloff>:/icons/icons/b_Exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="toolTip">
+    <string>Выход из программы</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actMasterMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_Keys.png</normaloff>:/icons/icons/b_Keys.png</iconset>
+   </property>
+   <property name="text">
+    <string>Режим мастера</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Переключиться в режим мастера и выйти из этого режима&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+M</string>
+   </property>
+  </action>
+  <action name="actAbout">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/logo.jpg</normaloff>:/icons/icons/logo.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>О нас</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Наша контактная информация&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actSaveAs">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/filenew.png</normaloff>:/icons/icons/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить как...</string>
+   </property>
+   <property name="iconText">
+    <string>Сохранить как...</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Сохранить конфигураию в другом файле&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actRefresh_2">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_refresh_green.png</normaloff>:/icons/icons/b_refresh_green.png</iconset>
+   </property>
+   <property name="text">
+    <string>Перерисовать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actUsersTable">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/icons8-team-80.png</normaloff>:/icons/icons/icons8-team-80.png</iconset>
+   </property>
+   <property name="text">
+    <string>Операторы</string>
+   </property>
+  </action>
+  <action name="actSmenasTable">
+   <property name="text">
+    <string>Список смен...</string>
+   </property>
+  </action>
+  <action name="actionAnonymouse">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_User.png</normaloff>:/icons/icons/b_User.png</iconset>
+   </property>
+   <property name="text">
+    <string>Anonymouse</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_User.png</normaloff>:/icons/icons/b_User.png</iconset>
+   </property>
+   <property name="text">
+    <string>Иванов</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_User.png</normaloff>:/icons/icons/b_User.png</iconset>
+   </property>
+   <property name="text">
+    <string>Петров</string>
+   </property>
+  </action>
+  <action name="action08_00_16_00">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/smiles/icons/Smiles/831758b0039b.png</normaloff>:/smiles/icons/Smiles/831758b0039b.png</iconset>
+   </property>
+   <property name="text">
+    <string>08:00 - 16:00</string>
+   </property>
+  </action>
+  <action name="action16_00_00_00">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/smiles/icons/Smiles/831758b0039b.png</normaloff>:/smiles/icons/Smiles/831758b0039b.png</iconset>
+   </property>
+   <property name="text">
+    <string>16:00 - 00:00</string>
+   </property>
+  </action>
+  <action name="action00_00">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_Smena.png</normaloff>:/icons/icons/b_Smena.png</iconset>
+   </property>
+   <property name="text">
+    <string>00:00 - 08:00</string>
+   </property>
+  </action>
+  <action name="actionrrr">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/b_User.png</normaloff>:/icons/icons/b_User.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сидоров</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SPRSettingsMainWidget</class>
+   <extends>QWidget</extends>
+   <header>sprsettingsmainwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TCPEchoLogsWidget</class>
+   <extends>QWidget</extends>
+   <header>tcp/tcpechologswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SPRComplexInfoWidget</class>
+   <extends>QWidget</extends>
+   <header>sprcomplexinfowidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
