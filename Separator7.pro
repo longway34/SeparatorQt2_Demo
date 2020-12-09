@@ -386,3 +386,9 @@ unix:!macx: LIBS += -L$$PWD/../../../../../../usr/local/qwt-6.1.5/lib/ -lqwt
 
 #win32: LIBS += -lpsapi
 #win32: INCLUDEPATH += C:\Qwt-6.1.5\src
+
+DISTFILES += \
+    icons/demo_images/main_screen.png \
+    icons/demo_images/process_control_screen.png \
+    icons/demo_images/setting_control_screen.png \
+    icons/demo_images/spectrs_control_screen.png
