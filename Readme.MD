@@ -43,5 +43,5 @@
 # О пректе
 Предсталенные скришоты выполнены на специально подготовленной для демонстрации программой оператора с использованием следующих программных комплеклов и библиотек:
 * При подготовке и публикации использовался программный продукт:
-[QtCreator](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/About_QtCeator_screen.png "QtCreator")
+![QtCreator](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/About_QtCeator_screen.png "QtCreator")
 * Библиотека Qwt: 6.1.5
