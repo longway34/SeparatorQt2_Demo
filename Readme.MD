@@ -48,5 +48,6 @@
 * Библиотека Qwt: 6.1.5
 * Компилировалось:
 ![Compilers](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/Compilers_screen.png "Compilers")
-* Релизная версия была собрана и эксплуатировалась под:
+* Релизная версия была собрана и эксплуатировалась под: 
+
 ![Linux](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/Linux_screen.png "Linux")
