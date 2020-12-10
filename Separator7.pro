@@ -391,6 +391,7 @@ DISTFILES += \
     Readme.MD \
     icons/demo_images/About_QtCeator_screen.png \
     icons/demo_images/Compilers_screen.png \
+    icons/demo_images/Linux_screen.png \
     icons/demo_images/main_screen.png \
     icons/demo_images/process_control_screen.png \
     icons/demo_images/setting_control_screen.png \
