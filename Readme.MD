@@ -41,9 +41,12 @@
 
 
 # О пректе
+Для публикации использовались реальные исходные файлы без функциональных ограничений. Из текстов убраны лишь блоки комментариев и подготовленнfz на их основе документация с использованием Doxygen-1.8.12. Так же в публикацию не вошли: "Инструкция оператора", "Инструкция по установке и эксплуатации" и другие нормативные документы.
 Предсталенные скришоты выполнены на специально подготовленной для демонстрации программой оператора с использованием следующих программных комплеклов и библиотек:
 * При подготовке и публикации использовался программный продукт:
 ![QtCreator](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/About_QtCeator_screen.png "QtCreator")
 * Библиотека Qwt: 6.1.5
 * Компилировалось:
 ![Compilers](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/Compilers_screen.png "Compilers")
+* Релизная версия была собрана и эксплуатировалась под:
+![Linux](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/ "Linux")
