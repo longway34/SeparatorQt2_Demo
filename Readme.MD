@@ -9,4 +9,4 @@
 И, хотя за методическую и интерфейсную основу были взяты АРМ оператора и сервер управления существующих моделей, АРМ оператора эффективнее было написать заново, чем я и занимался.
 Что из этого получилось - можно видеть на представленных скриншотах:
 
-![Панель управления комплексом](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/main_screen.png, "Панель управления комплексом")
+![Панель управления комплексом](https://raw.githubusercontent.com/longway34/SeparatorQt2_Demo/master/icons/demo_images/main_screen.png "Панель управления комплексом")
